@@ -6,9 +6,10 @@ gem 'bootstrap-sass'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development, :test do
+group :development do
   gem 'pg'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 
@@ -43,6 +44,9 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara'
+  gem 'rspec-rails'
+  gem 'rb-inotify'
+  gem 'libnotify'
 end
 
 group :production do
